@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.1.8/20986
 // Filename: Custom_feather_box.ggsk
-// Generated 2025-08-04T13:59:48
+// Generated 2025-08-04T14:52:54
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_sounds_splashscreen', 2, false, { ignoreInState: 1  });
@@ -18260,6 +18260,143 @@ alert("The current view has been copied.");
 		me._thumbnail_menu_code.ggUpdatePosition=function (useTransition) {
 		}
 		me.divSkin.appendChild(me._thumbnail_menu_code);
+		el=me._rectangle_1=document.createElement('div');
+		el.ggId="Rectangle 1";
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
+		el.ggVisible=true;
+		el.className="ggskin ggskin_rectangle ";
+		el.ggType='rectangle';
+		hs ='';
+		hs+='background : #ffffff;';
+		hs+='border : 1px solid #000000;';
+		hs+='height : 170px;';
+		hs+='left : 269px;';
+		hs+='position : absolute;';
+		hs+='top : 204px;';
+		hs+='visibility : inherit;';
+		hs+='width : 600px;';
+		hs+='pointer-events:auto;';
+		el.setAttribute('style',hs);
+		el.style.transformOrigin='50% 50%';
+		me._rectangle_1.ggIsActive=function() {
+			return false;
+		}
+		el.ggElementNodeId=function() {
+			return player.getCurrentNode();
+		}
+		me._rectangle_1.ggUpdatePosition=function (useTransition) {
+		}
+		el=me._text_1=document.createElement('div');
+		els=me._text_1__text=document.createElement('div');
+		el.className='ggskin ggskin_textdiv';
+		el.ggTextDiv=els;
+		el.ggId="Text 1";
+		el.ggDx=0;
+		el.ggDy=1;
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
+		el.ggVisible=true;
+		el.className="ggskin ggskin_text ";
+		el.ggType='text';
+		hs ='';
+		hs+='background : #ffffff;';
+		hs+='border : 1px solid #000000;';
+		hs+='color : #000000;';
+		hs+='height : 170px;';
+		hs+='left : calc(50% - ((600px + 2px) / 2) + 0px);';
+		hs+='position : absolute;';
+		hs+='top : calc(50% - ((170px + 2px) / 2) + 1px);';
+		hs+='visibility : inherit;';
+		hs+='width : 600px;';
+		hs+='pointer-events:auto;';
+		el.setAttribute('style',hs);
+		el.style.transformOrigin='50% 50%';
+		hs ='';
+		hs += 'box-sizing: border-box;';
+		hs+='width: 100%;';
+		hs+='height: 100%;';
+		hs+='text-align: center;';
+		hs+='white-space: pre;';
+		hs+='padding: 0px;';
+		hs+='overflow: hidden;';
+		hs+='overflow-y: auto;';
+		els.setAttribute('style',hs);
+		me._text_1.ggUpdateText=function() {
+			var params = [];
+			var hs = player._("\nDisclaimer:\n\n\nVisual representations including models, drawings, illustrations,\nphotographs and art renderings etc are illustrative artisitic impressions only.", params);
+			if (hs!=this.ggText) {
+				this.ggText=hs;
+				this.ggTextDiv.innerHTML=hs;
+				if (this.ggUpdatePosition) this.ggUpdatePosition();
+			}
+		}
+		me._text_1.ggUpdateText();
+		el.appendChild(els);
+		me._text_1.ggIsActive=function() {
+			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
+				return this.parentNode.ggIsActive();
+			}
+			return false;
+		}
+		el.ggElementNodeId=function() {
+			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
+				return this.parentNode.ggElementNodeId();
+			}
+			return player.getCurrentNode();
+		}
+		me._text_1.ggUpdatePosition=function (useTransition) {
+		}
+		el=me._button_1=document.createElement('div');
+		els=me._button_1__img=document.createElement('img');
+		els.className='ggskin ggskin_button_1';
+		hs=basePath + 'images/button_1.png';
+		els.setAttribute('src',hs);
+		els.ggNormalSrc=hs;
+		hs ='';
+		hs += 'position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;;';
+		els.setAttribute('style', hs);
+		els.className='ggskin ggskin_button';
+		els['ondragstart']=function() { return false; };
+		player.checkLoaded.push(els);
+		el.appendChild(els);
+		el.ggSubElement = els;
+		el.ggId="Button 1";
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
+		el.ggVisible=true;
+		el.className="ggskin ggskin_button ";
+		el.ggType='button';
+		hs ='';
+		hs+='cursor : pointer;';
+		hs+='height : 26px;';
+		hs+='left : 261px;';
+		hs+='position : absolute;';
+		hs+='top : 125px;';
+		hs+='visibility : inherit;';
+		hs+='width : 79px;';
+		hs+='pointer-events:auto;';
+		el.setAttribute('style',hs);
+		el.style.transformOrigin='50% 50%';
+		me._button_1.ggIsActive=function() {
+			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
+				return this.parentNode.ggIsActive();
+			}
+			return false;
+		}
+		el.ggElementNodeId=function() {
+			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
+				return this.parentNode.ggElementNodeId();
+			}
+			return player.getCurrentNode();
+		}
+		me._button_1.onclick=function (e) {
+			me._rectangle_1.style.transition='none';
+			me._rectangle_1.style.visibility='hidden';
+			me._rectangle_1.ggVisible=false;
+		}
+		me._button_1.ggUpdatePosition=function (useTransition) {
+		}
+		me._text_1.appendChild(me._button_1);
+		me._rectangle_1.appendChild(me._text_1);
+		me.divSkin.appendChild(me._rectangle_1);
 		me._button_container.logicBlock_visible();
 		me._btn_fullscreen.logicBlock_position();
 		me._btn_fullscreen.logicBlock_visible();
@@ -25819,10 +25956,10 @@ me._ht_info_bg.style.transform='';
 					((player.getVariableValue('resp_phone') == false))
 				)
 			) {
-				let pdfInterval_17 = setInterval(() => {
+				let pdfInterval_49 = setInterval(() => {
 					if (skin._ht_pdf_popup_pdf0__pdf.contentWindow.PDFViewerApplication && skin._ht_pdf_popup_pdf0__pdf.contentWindow.PDFViewerApplication.initialized && skin._ht_pdf_popup_pdf0__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._ht_pdf_popup_pdf0__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._ht_pdf_popup_pdf0.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_17);
+						clearInterval(pdfInterval_49);
 					}
 				}, 50);
 			}
@@ -25845,10 +25982,10 @@ me._ht_info_bg.style.transform='';
 					((player.getVariableValue('resp_phone') == true))
 				)
 			) {
-				let pdfInterval_18 = setInterval(() => {
+				let pdfInterval_50 = setInterval(() => {
 					if (skin._pdf_popup_phone0__pdf.contentWindow.PDFViewerApplication && skin._pdf_popup_phone0__pdf.contentWindow.PDFViewerApplication.initialized && skin._pdf_popup_phone0__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._pdf_popup_phone0__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._pdf_popup_phone0.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_18);
+						clearInterval(pdfInterval_50);
 					}
 				}, 50);
 			}
@@ -31852,10 +31989,10 @@ me._ht_info_bg.style.transform='';
 					((player.getVariableValue('resp_phone') == false))
 				)
 			) {
-				let pdfInterval_19 = setInterval(() => {
+				let pdfInterval_51 = setInterval(() => {
 					if (skin._ht_pdf_popup_pdf0__pdf.contentWindow.PDFViewerApplication && skin._ht_pdf_popup_pdf0__pdf.contentWindow.PDFViewerApplication.initialized && skin._ht_pdf_popup_pdf0__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._ht_pdf_popup_pdf0__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._ht_pdf_popup_pdf0.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_19);
+						clearInterval(pdfInterval_51);
 					}
 				}, 50);
 			}
@@ -31878,10 +32015,10 @@ me._ht_info_bg.style.transform='';
 					((player.getVariableValue('resp_phone') == true))
 				)
 			) {
-				let pdfInterval_20 = setInterval(() => {
+				let pdfInterval_52 = setInterval(() => {
 					if (skin._pdf_popup_phone0__pdf.contentWindow.PDFViewerApplication && skin._pdf_popup_phone0__pdf.contentWindow.PDFViewerApplication.initialized && skin._pdf_popup_phone0__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._pdf_popup_phone0__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._pdf_popup_phone0.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_20);
+						clearInterval(pdfInterval_52);
 					}
 				}, 50);
 			}
